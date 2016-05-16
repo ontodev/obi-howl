@@ -1,0 +1,547 @@
+disposition
+type:> owl:Class
+
+quality
+type:> owl:Class
+
+role
+type:> owl:Class
+
+material entity
+type:> owl:Class
+
+portion of organism substance
+label: portion of organism substance
+type:> owl:Class
+editor preferred term~editor preferred label: portion of organism substance
+textual definition: Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.
+imported from:> obo:caro.owl
+subclass of:> gross anatomical part
+
+portion of tissue
+label: portion of tissue
+type:> owl:Class
+editor preferred term~editor preferred label: portion of tissue
+textual definition: Anatomical structure, that consists of similar cells and intercellular matrix, aggregated according to genetically determined spatial relationships.
+imported from:> obo:caro.owl
+subclass of:> gross anatomical part
+
+multi-tissue structure
+label: multi-tissue structure
+type:> owl:Class
+editor preferred term~editor preferred label: multi-tissue structure
+textual definition: Anatomical structure that has as its parts two or more portions of tissue of at least two different types and which through specific morphogenetic processes forms a single distinct structural unit demarcated by bona-fide boundaries from other distinct structural units of different types.
+imported from:> obo:caro.owl
+subclass of:> gross anatomical part
+
+epithelium
+label: epithelium
+type:> owl:Class
+editor preferred term~editor preferred label: epithelium
+textual definition: Portion of tissue, that consists of one or more layers of epithelial cells connected to each other by cell junctions and which is underlain by a basal lamina.
+imported from:> obo:caro.owl
+subclass of:> portion of tissue
+
+gross anatomical part
+type:> owl:Class
+
+peptide
+type:> owl:Class
+
+cell line cell
+label: cell line cell
+type:> owl:Class
+editor preferred term~editor preferred label: cell line cell
+imported from:> obo:clo.owl
+subclass of:> secondary cultured cell
+
+mortal cell line cell
+label: mortal cell line cell
+type:> owl:Class
+editor preferred term~editor preferred label: mortal cell line cell
+textual definition: A cell line cell that is capable of replicating a limited number of times in culture before undergoing senescence.
+imported from:> obo:clo.owl
+subclass of:> cell line cell
+
+immortal cell line cell
+label: immortal cell line cell
+type:> owl:Class
+editor preferred term~editor preferred label: immortal cell line cell
+textual definition: A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.
+imported from:> obo:clo.owl
+subclass of:> cell line cell
+
+cell line
+label: cell line@en
+type:> owl:Class
+editor preferred term~editor preferred label: cell line@en
+imported from:> obo:clo.owl
+subclass of:> secondary cultured cell population
+
+immortal cell line
+label: immortal cell line@en
+type:> owl:Class
+editor preferred term~editor preferred label: immortal cell line@en
+textual definition: A cell line that is expected to be capable of indefinite propagation in an vitro culture.
+imported from:> obo:clo.owl
+subclass of:> cell line
+
+mortal cell line
+label: mortal cell line@en
+type:> owl:Class
+editor preferred term~editor preferred label: mortal cell line@en
+textual definition: A cell line is able to support only a limited number of passages in vitro.
+imported from:> obo:clo.owl
+subclass of:> cell line
+
+cell
+label: cell
+label: cell@en
+type:> owl:Class
+editor preferred term~editor preferred label: cell
+editor preferred term~editor preferred label: cell@en
+textual definition: A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.
+imported from:> obo:cl.owl
+subclass of:> material entity
+
+primary cultured cell
+label: primary cultured cell
+type:> owl:Class
+editor preferred term~editor preferred label: primary cultured cell
+textual definition: A cultured cell that is freshly isolated from a organismal source, or derives in culture from such a cell prior to the culture being passaged.
+imported from:> obo:cl.owl
+subclass of:> cultured cell
+
+native cell
+label: native cell
+type:> owl:Class
+editor preferred term~editor preferred label: native cell
+textual definition: A cell that is found in a natural setting, which includes multicellular organism cells 'in vivo' (i.e. part of an organism), and unicellular organisms 'in environment' (i.e. part of a natural environment).
+imported from:> obo:cl.owl
+subclass of:> cell
+
+cultured cell
+label: cultured cell
+type:> owl:Class
+editor preferred term~editor preferred label: cultured cell
+textual definition: A cell in vitro that is or has been maintained or propagated as part of a cell culture.
+imported from:> obo:cl.owl
+subclass of:> experimentally modified cell in vitro
+
+fibroblast
+label: fibroblast
+type:> owl:Class
+editor preferred term~editor preferred label: fibroblast
+textual definition: A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+epithelial cell
+label: epithelial cell
+type:> owl:Class
+editor preferred term~editor preferred label: epithelial cell
+textual definition: A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+T cell
+label: T cell
+type:> owl:Class
+editor preferred term~editor preferred label: T cell
+textual definition: A type of lymphocyte whose defining characteristic is the expression of a T cell receptor complex.
+imported from:> obo:cl.owl
+subclass of:> lymphocyte
+
+mast cell
+label: mast cell
+type:> owl:Class
+editor preferred term~editor preferred label: mast cell
+textual definition: A cell that is found in almost all tissues containing numerous basophilic granules and capable of releasing large amounts of histamine and heparin upon activation. Progenitors leave bone marrow and mature in connective and mucosal tissue. Mature mast cells are found in all tissues, except the bloodstream. Their phenotype is CD117-high, CD123-negative, CD193-positive, CD200R3-positive, and FceRI-high. Stem-cell factor (KIT-ligand; SCF) is the main controlling signal of their survival and development.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+hepatocyte
+label: hepatocyte
+type:> owl:Class
+editor preferred term~editor preferred label: hepatocyte
+textual definition: The main structural component of the liver. They are specialized epithelial cells that are organized into interconnected plates called lobules. Majority of cell population of liver, polygonal in shape, arranged in plates or trabeculae between sinusoids; may have single nucleus or binucleated.
+imported from:> obo:cl.owl
+subclass of:> epithelial cell
+
+erythrocyte
+label: erythrocyte
+type:> owl:Class
+editor preferred term~editor preferred label: erythrocyte
+textual definition: A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+macrophage
+label: macrophage
+type:> owl:Class
+editor preferred term~editor preferred label: macrophage
+textual definition: A mononuclear phagocyte present in variety of tissues, typically differentiated from monocytes, capable of phagocytosing a variety of extracellular particulate material, including immune complexes, microorganisms, and dead cells.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+B cell
+label: B cell
+type:> owl:Class
+editor preferred term~editor preferred label: B cell
+textual definition: A lymphocyte of B lineage with the phenotype CD19-positive, CD20-positive, and capable of B cell mediated immunity.
+imported from:> obo:cl.owl
+subclass of:> lymphocyte
+
+dendritic cell
+label: dendritic cell
+type:> owl:Class
+editor preferred term~editor preferred label: dendritic cell
+textual definition: A cell of hematopoietic origin, typically resident in particular tissues, specialized in the uptake, processing, and transport of antigens to lymph nodes for the purpose of stimulating an immune response via T cell activation. These cells are lineage negative (CD3-negative, CD19-negative, CD34-negative, and CD56-negative).
+imported from:> obo:cl.owl
+subclass of:> cell
+
+lymphocyte
+label: lymphocyte
+type:> owl:Class
+editor preferred term~editor preferred label: lymphocyte
+textual definition: A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.
+imported from:> obo:cl.owl
+subclass of:> mononuclear cell
+
+experimentally modified cell in vitro
+label: experimentally modified cell in vitro
+type:> owl:Class
+editor preferred term~editor preferred label: experimentally modified cell in vitro
+textual definition: A cell in vitro that has undergone physical changes as a consequence of a deliberate and specific experimental procedure.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+CD4-positive, alpha-beta T cell
+label: CD4-positive, alpha-beta T cell
+type:> owl:Class
+editor preferred term~editor preferred label: CD4-positive, alpha-beta T cell
+textual definition: A mature alpha-beta T cell that expresses an alpha-beta T cell receptor and the CD4 coreceptor.
+imported from:> obo:cl.owl
+subclass of:> alpha-beta T cell
+
+CD8-positive, alpha-beta T cell
+label: CD8-positive, alpha-beta T cell
+type:> owl:Class
+editor preferred term~editor preferred label: CD8-positive, alpha-beta T cell
+textual definition: A T cell expressing an alpha-beta T cell receptor and the CD8 coreceptor.
+imported from:> obo:cl.owl
+subclass of:> alpha-beta T cell
+
+basophil
+label: basophil
+type:> owl:Class
+editor preferred term~editor preferred label: basophil
+textual definition: Any of the immature or mature forms of a granular leukocyte that in its mature form has an irregularly shaped, pale-staining nucleus that is partially constricted into two lobes, and with cytoplasm that contains coarse, bluish-black granules of variable size. Basophils contain vasoactive amines such as histamine and serotonin, which are released on appropriate stimulation. A basophil is CD123-positive, CD193-positive, CD203c-positive, and FceRIa-positive.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+plasma cell
+label: plasma cell
+type:> owl:Class
+editor preferred term~editor preferred label: plasma cell
+textual definition: A terminally differentiated, post-mitotic, antibody secreting cell of the B cell lineage with the phenotype CD138-positive, surface immunonoglobulin-negative, and MHC Class II-negative. Plasma cells are oval or round with extensive rough endoplasmic reticulum, a well-developed Golgi apparatus, and a round nucleus having a characteristic cartwheel heterochromatin pattern and are devoted to producing large amounts of immunoglobulin.
+imported from:> obo:cl.owl
+subclass of:> B cell
+
+alpha-beta T cell
+label: alpha-beta T cell
+type:> owl:Class
+editor preferred term~editor preferred label: alpha-beta T cell
+textual definition: A T cell that expresses an alpha-beta T cell receptor complex.
+imported from:> obo:cl.owl
+subclass of:> T cell
+
+CD8-positive, alpha-beta cytotoxic T cell
+label: CD8-positive, alpha-beta cytotoxic T cell
+type:> owl:Class
+editor preferred term~editor preferred label: CD8-positive, alpha-beta cytotoxic T cell
+textual definition: A CD8-positive, alpha-beta T cell that is capable of killing target cells in an antigen specific manner with the phenotype perforin-positive and granzyme B-positive.
+imported from:> obo:cl.owl
+subclass of:> CD8-positive, alpha-beta T cell
+
+mature NK T cell
+label: mature NK T cell
+type:> owl:Class
+editor preferred term~editor preferred label: mature NK T cell
+textual definition: A mature alpha-beta T cell of a distinct lineage that bears natural killer markers and a T cell receptor specific for a limited set of ligands. NK T cells have activation and regulatory roles particularly early in an immune response.
+imported from:> obo:cl.owl
+subclass of:> alpha-beta T cell
+
+mononuclear cell
+label: mononuclear cell
+type:> owl:Class
+editor preferred term~editor preferred label: mononuclear cell
+textual definition: A leukocyte with a single non-segmented nucleus in the mature form.
+imported from:> obo:cl.owl
+subclass of:> cell
+
+soil
+label: soil
+type:> owl:Class
+editor preferred term~editor preferred label: soil
+textual definition: Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms.
+imported from:> obo:envo.owl
+subclass of:> material entity
+
+podzol
+label: podzol
+type:> owl:Class
+editor preferred term~editor preferred label: podzol
+textual definition: Podzols are soils with a typically ash-grey upper subsurface horizon, bleached by loss of organic matter and iron oxides, on top of a dark accumulation horizon with brown, reddish or black illuviated humus and/or reddish Fe compounds. Podzols occur in humid areas in the boreal and temperate zones and locally also in the tropics.
+imported from:> obo:envo.owl
+subclass of:> soil
+
+environmental material
+label: environmental material
+type:> owl:Class
+editor preferred term~editor preferred label: environmental material
+textual definition: A portion of environmental material is a fiat object which forms the medium or part of the medium of an environmental system.
+imported from:> obo:envo.owl
+subclass of:> material entity
+
+biological_process
+type:> owl:Class
+
+Insulin resistance
+label: Insulin resistance
+type:> owl:Class
+editor preferred term~editor preferred label: Insulin resistance
+textual definition: Increased resistance towards insulin, that is, diminished effectiveness of insulin in reducing blood glucose levels.
+imported from:> obo:hp.owl
+subclass of:> disposition
+
+information content entity
+type:> owl:Class
+
+editor preferred term~editor preferred label
+label: editor preferred label@en
+label: editor preferred term
+label: editor preferred term@en
+label: editor preferred term~editor preferred label
+type:> owl:AnnotationProperty
+editor preferred term~editor preferred label: editor preferred term~editor preferred label
+editor preferred term~editor preferred label: editor preferred term
+editor preferred term~editor preferred label: editor preferred label@en
+editor preferred term~editor preferred label: editor preferred term@en
+textual definition: The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)@en
+
+textual definition
+label: definition
+label: textual definition
+label: definition@en
+type:> owl:AnnotationProperty
+editor preferred term~editor preferred label: definition
+editor preferred term~editor preferred label: textual definition
+editor preferred term~editor preferred label: definition@en
+textual definition: The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+textual definition: The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.@en
+
+alternative term
+label: alternative term@en
+type:> owl:AnnotationProperty
+editor preferred term~editor preferred label: alternative term@en
+textual definition: An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)@en
+
+imported from
+label: imported from@en
+type:> owl:AnnotationProperty
+
+infection
+label: infection@en
+type:> owl:Class
+editor preferred term~editor preferred label: infection@en
+textual definition: A part of an extended organism that itself has as part a population of one or more infectious agents and that (1) exists as a result of processes initiated by members of the infectious agent population and is (2) clinically abnormal in virtue of the presence of this infectious agent population, or (3) has a disposition to bring clinical abnormality to immunocompetent organisms of the same Species as the host (the organism corresponding to the extended organism) through transmission of a member or offspring of a member of the infectious agent population.@en
+imported from:> obo:ido.owl
+subclass of:> material entity
+
+planned process
+type:> owl:Class
+
+secondary cultured cell
+type:> owl:Class
+
+secondary cultured cell population
+type:> owl:Class
+
+administering substance in vivo
+type:> owl:Class
+
+clinical history
+label: clinical history
+type:> owl:Class
+editor preferred term~editor preferred label: clinical history
+textual definition: A series of statements representing health-relevant qualities of a patient and of a patient's family.@en
+imported from:> obo:ogms.owl
+subclass of:> information content entity
+
+phenotype
+label: phenotype
+type:> owl:Class
+editor preferred term~editor preferred label: phenotype
+textual definition: A (combination of) quality(ies) of an organism determined by the interaction of its genetic make-up and environment that differentiates specific instances of a species from other instances of the same species.@en
+imported from:> obo:ogms.owl
+subclass of:> quality
+
+disease
+label: disease
+type:> owl:Class
+editor preferred term~editor preferred label: disease
+textual definition: A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.@en
+imported from:> obo:ogms.owl
+subclass of:> disposition
+
+disease course
+label: disease course
+type:> owl:Class
+editor preferred term~editor preferred label: disease course
+textual definition: The totality of all processes through which a given disease instance is realized.@en
+imported from:> obo:ogms.owl
+subclass of:> biological_process
+
+treatment
+label: treatment
+type:> owl:Class
+editor preferred term~editor preferred label: treatment
+textual definition: A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder@en
+imported from:> obo:ogms.owl
+subclass of:> planned process
+
+protein
+label: protein
+type:> owl:Class
+editor preferred term~editor preferred label: protein
+textual definition: An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA.
+imported from:> obo:pr.owl
+subclass of:> peptide
+
+CD4 molecule
+label: CD4 molecule
+type:> owl:Class
+editor preferred term~editor preferred label: CD4 molecule
+textual definition: A protein that is a translation product of the human CD4 gene or a 1:1 ortholog thereof. CD4 is an accessory protein for MHC class-II antigen/T-cell receptor interaction. It is the primary receptor for HIV-1. CD4 has four immunoglobulin-like domains in its extracellular region that share the same structure, but can differ in sequence.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+CD3 subunit with immunoglobulin domain
+label: CD3 subunit with immunoglobulin domain
+type:> owl:Class
+editor preferred term~editor preferred label: CD3 subunit with immunoglobulin domain
+textual definition: A protein with a core domain composition consisting of an extracellular N-terminal domain that adopts an immunoglobulin fold, a transmembrane domain, and an intracellular C-terminal domain with a single copy of the Immunoreceptor tyrosine-based activation motif (Pfam:PF02189) (ITAM). It constitutes the invariant subunit of the T cell antigen receptor (TCR). TCR is a surface receptor on T cells responsible for recognizing MHC-restricted antigens and initiating the cellular immune response.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+antithrombin-III
+label: antithrombin-III
+type:> owl:Class
+editor preferred term~editor preferred label: antithrombin-III
+textual definition: A serpin that is a translation product of the human SERPINC1 gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+double-stranded RNA-specific adenosine deaminase
+label: double-stranded RNA-specific adenosine deaminase
+type:> owl:Class
+editor preferred term~editor preferred label: double-stranded RNA-specific adenosine deaminase
+textual definition: A protein that is a translation product of the human ADAR gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+deoxyribonuclease-1
+label: deoxyribonuclease-1
+type:> owl:Class
+editor preferred term~editor preferred label: deoxyribonuclease-1
+textual definition: A protein that is a translation product of the human DNASE1 gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+glial cell line-derived neurotrophic factor
+label: glial cell line-derived neurotrophic factor
+type:> owl:Class
+editor preferred term~editor preferred label: glial cell line-derived neurotrophic factor
+textual definition: A protein that is a translation product of the human GDNF gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+ribonuclease T2
+label: ribonuclease T2
+type:> owl:Class
+editor preferred term~editor preferred label: ribonuclease T2
+textual definition: A protein that is a translation product of the human RNASET2 gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+DNA ligase
+label: DNA ligase
+type:> owl:Class
+editor preferred term~editor preferred label: DNA ligase
+textual definition: A protein that is a translation product of the Escherichia coli K-12 ligA gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+T cell receptor co-receptor CD8
+label: T cell receptor co-receptor CD8
+type:> owl:Class
+editor preferred term~editor preferred label: T cell receptor co-receptor CD8
+textual definition: A protein complex that is a membrane-bound heterodimeric co-receptor for MHC class-I antigen/T-cell receptor interaction.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+guanyl-specific ribonuclease T1
+label: guanyl-specific ribonuclease T1
+type:> owl:Class
+editor preferred term~editor preferred label: guanyl-specific ribonuclease T1
+textual definition: A protein that is a translation product of the Aspergillus oryzae rntA gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+nuclease S1
+label: nuclease S1
+type:> owl:Class
+editor preferred term~editor preferred label: nuclease S1
+textual definition: A protein that is a translation product of the Aspergillus oryzae nucS gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+ribonuclease U2
+label: ribonuclease U2
+type:> owl:Class
+editor preferred term~editor preferred label: ribonuclease U2
+textual definition: A protein that is a translation product of the Ustilago sphaerogena RNU2 gene or a 1:1 ortholog thereof.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+ribonuclease V1
+label: ribonuclease V1
+type:> owl:Class
+editor preferred term~editor preferred label: ribonuclease V1
+textual definition: A protein with ribonuclease activity that is a constituent of cobra venom.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+ribonuclease CL3
+label: ribonuclease CL3
+type:> owl:Class
+editor preferred term~editor preferred label: ribonuclease CL3
+textual definition: A protein with ribonuclease activity that is purified from chicken liver.
+imported from:> obo:pr.owl
+subclass of:> protein
+
+molecular label role
+label: molecular label role@en
+type:> owl:Class
+editor preferred term~editor preferred label: molecular label role@en
+textual definition: a reagent role inhering in a molecular entity intended to associate with some molecular target to serve as a proxy for the presence, abundance, or location of this target in a detection of molecular label assay.
+alternative term: molecular tracer role
+imported from:> obo:reo.owl
+subclass of:> role
+
+molecular label
+label: molecular label
+type:> owl:Class
+editor preferred term~editor preferred label: molecular label
+textual definition: a molecular reagent intended to associate with some molecular target to serve as a proxy for the presence, abundance, or location of this target in a detection 

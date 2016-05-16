@@ -1,0 +1,202 @@
+part of
+label: part of@en
+type:> owl:ObjectProperty
+type:> owl:TransitiveProperty
+editor preferred term~editor preferred label: is part of@en
+example of usage: this day is part of this year (occurrent parthood)@en
+example of usage: my brain is part of my body (continuant parthood, two material entities)@en
+example of usage: my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)@en
+textual definition: a core relation that holds between a part and its whole@en
+editor note: Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.@en
+editor note: Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime@en
+editor note: Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)
+
+  A continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'.@en
+alternative term: part_of@en
+temporal interpretation:> axiom holds for all times
+rdfs:seeAlso: http://www.obofoundry.org/ro/#OBO_REL:part_of
+owl:inverseOf:> has part
+
+has part
+label: has part@en
+type:> owl:ObjectProperty
+type:> owl:TransitiveProperty
+editor preferred term~editor preferred label: has part@en
+example of usage: this year has part this day (occurrent parthood)@en
+example of usage: my body has part my brain (continuant parthood, two material entities)@en
+example of usage: my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)@en
+textual definition: a core relation that holds between a whole and its part@en
+editor note: Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.@en
+editor note: Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime@en
+editor note: Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)
+
+  A continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'.@en
+alternative term: has_part@en
+temporal interpretation:> axiom holds for all times
+
+realized in
+label: realized in@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: realized in@en
+example of usage: this disease is realized in this disease course@en
+example of usage: this fragility is realized in this shattering@en
+example of usage: this investigator role is realized in this investigation@en
+alternative term: is realized by@en
+alternative term: realized_in@en
+elucidation: [copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+rdfs:domain:> realizable entity
+rdfs:isDefinedBy:> obo:bfo.owl
+rdfs:range:> process
+
+realizes
+label: realizes@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: realizes@en
+example of usage: this disease course realizes this disease@en
+example of usage: this shattering realizes this fragility@en
+example of usage: this investigation realizes this investigator role@en
+elucidation: to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+rdfs:domain:> process
+rdfs:isDefinedBy:> obo:iao.owl
+rdfs:range:> realizable entity
+owl:inverseOf:> realized in
+
+occurs in
+label: occurs in@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: occurs in@en
+textual definition: b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+alternative term: occurs_in@en
+alternative term: unfolds in@en
+alternative term: unfolds_in@en
+comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
+rdfs:domain:> occurrent
+rdfs:isDefinedBy:> obo:bfo.owl
+rdfs:range:> independent continuant
+owl:inverseOf:> contains process
+owl:propertyChainAxiom:>> 'occurs in' AND 'part of'
+owl:propertyChainAxiom:>> 'part of' AND 'occurs in'
+
+contains process
+label: contains process@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: site of@en
+textual definition: [copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+comment: Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant
+rdfs:isDefinedBy:> obo:bfo.owl
+
+inheres in
+label: inheres in@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: inheres in@en
+example of usage: this red color inheres in this apple@en
+example of usage: this fragility inheres in this vase@en
+textual definition: a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence@en
+editor note: A dependent inheres in its bearer at all times for which the dependent exists.@en
+alternative term: inheres_in@en
+temporal interpretation:> axiom holds for all times
+
+bearer of
+label: bearer of@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: bearer of@en
+example of usage: this apple is bearer of this red color@en
+example of usage: this vase is bearer of this fragility@en
+textual definition: a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence@en
+editor note: A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist.@en
+alternative term: bearer_of@en
+alternative term: is bearer of@en
+temporal interpretation:> axiom holds for all times
+rdfs:range:> specifically dependent continuant
+owl:inverseOf:> inheres in
+
+participates in
+label: participates in@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: participates in@en
+example of usage: this input material (or this output material) participates in this process@en
+example of usage: this investigator participates in this investigation@en
+example of usage: this blood clot participates in this blood coagulation@en
+textual definition: a relation between a continuant and a process, in which the continuant is somehow involved in the process@en
+alternative term: participates_in@en
+rdfs:domain:> continuant
+rdfs:range:> occurrent
+
+has participant
+label: has participant@en
+type:> owl:ObjectProperty
+editor preferred term~editor preferred label: has participant@en
+example of usage: this process has participant this input material (or this output material)@en
+example of usage: this investigation has participant this investigator@en
+example of usage: this blood coagulation has participant this blood clot@en
+textual definition: a relation between a process and a continuant, in which the continuant is somehow involved in the process@en
+editor note: Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time.@en
+alternative term: has_participant@en
+Source: http://www.obofoundry.org/ro/#OBO_REL:has_participant
+rdfs:domain:> occurrent
+rdfs:range:> continuant
+owl:inverseOf:> participates in
+
+is concretized as
+label: is concretized as@en
+type:> owl:ObjectProperty
+example of usage: A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).@en
+example of usage: An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).@en
+textual definition: A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.@en
+rdfs:domain:> generically dependent continuant
+rdfs:range:> specifically dependent continuant
+owl:inverseOf:> concretizes
+
+concretizes
+label: concretizes@en
+type:> owl:ObjectProperty
+example of usage: A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).@en
+example of usage: An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).@en
+textual definition: A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.@en
+rdfs:domain:> specifically dependent continuant
+rdfs:range:> generically dependent continuant
+owl:inverseOf:> is concretized as
+
+function of
+label: function of@en
+type:> owl:ObjectProperty
+example of usage: this catalysis function is a function of this enzyme@en
+textual definition: a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en
+editor note: A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists.@en
+alternative term: function_of@en
+alternative term: is function of@en
+rdfs:domain:> function
+rdfs:subPropertyOf:> inheres in
+owl:inverseOf:> has function
+
+quality of
+label: quality of@en
+type:> owl:ObjectProperty
+example of usage: this red color is a quality of this apple@en
+textual definition: a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en
+editor note: A quality inheres in its bearer at all times for which the quality exists.@en
+alternative term: is quality of@en
+alternative term: quality_of@en
+rdfs:subPropertyOf:> inheres in
+owl:inverseOf:> has quality
+
+role of
+label: role of@en
+type:> owl:ObjectProperty
+example of usage: this investigator role is a role of this person@en
+textual definition: a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en
+editor note: A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.@en
+alternative term: is role of@en
+alternative term: role_of@en
+rdfs:subPropertyOf:> inheres in
+
+has function
+label: has function@en
+type:> owl:ObjectProperty
+example of usage: this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)@en
+textual definition: a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en
+editor note: A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists.@en
+alternative term: has_function@en
+rdfs:range:

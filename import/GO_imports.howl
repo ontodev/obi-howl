@@ -1,0 +1,1045 @@
+process
+type:> owl:Class
+
+function
+type:> owl:Class
+
+material entity
+type:> owl:Class
+
+core promoter binding
+label: core promoter binding
+type:> owl:Class
+editor preferred term~editor preferred label: core promoter binding
+textual definition: Interacting selectively and non-covalently with the regulatory region composed of the transcription start site and binding sites for the basal transcription machinery. Binding may occur as a sequence specific interaction or as an interaction observed only once a factor has been recruited to the DNA by other factors.
+imported from:> obo:go.owl
+subclass of:> binding
+
+antibody-dependent cellular cytotoxicity
+label: antibody-dependent cellular cytotoxicity
+type:> owl:Class
+editor preferred term~editor preferred label: antibody-dependent cellular cytotoxicity
+textual definition: Cytolysis of target cells by natural killer cells, eosinophils, neutrophils, monocytes, or macrophages following engagement of antibodies bound to the target cells by Fc receptors on the effector cells.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+type IV hypersensitivity
+label: type IV hypersensitivity
+type:> owl:Class
+editor preferred term~editor preferred label: type IV hypersensitivity
+textual definition: An inflammatory response driven by T cell recognition of processed soluble or cell-associated antigens leading to cytokine release and leukocyte activation.
+imported from:> obo:go.owl
+subclass of:> hypersensitivity
+
+cytokine production
+label: cytokine production
+type:> owl:Class
+editor preferred term~editor preferred label: cytokine production
+textual definition: The appearance of a cytokine due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+cell killing
+label: cell killing
+type:> owl:Class
+editor preferred term~editor preferred label: cell killing
+textual definition: Any process in an organism that results in the killing of its own cells or those of another organism, including in some cases the death of the other organism. Killing here refers to the induction of death in one cell by another cell, not cell-autonomous death due to internal or other environmental conditions.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+T cell mediated cytotoxicity
+label: T cell mediated cytotoxicity
+type:> owl:Class
+editor preferred term~editor preferred label: T cell mediated cytotoxicity
+textual definition: The directed killing of a target cell by a T cell through the release of granules containing cytotoxic mediators or through the engagement of death receptors.
+imported from:> obo:go.owl
+subclass of:> cell killing
+
+adaptive immune response
+label: adaptive immune response
+type:> owl:Class
+editor preferred term~editor preferred label: adaptive immune response
+textual definition: An immune response based on directed amplification of specific receptors for antigen produced through a somatic diversification process, and allowing for enhanced response to subsequent exposures to the same antigen (immunological memory).
+imported from:> obo:go.owl
+subclass of:> immune response
+
+cytokine production involved in immune response
+label: cytokine production involved in immune response
+type:> owl:Class
+editor preferred term~editor preferred label: cytokine production involved in immune response
+textual definition: The appearance of a cytokine due to biosynthesis or secretion following a cellular stimulus contributing to an immune response, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+platelet activating factor production
+label: platelet activating factor production
+type:> owl:Class
+editor preferred term~editor preferred label: platelet activating factor production
+textual definition: The synthesis or release of platelet activating factor following a stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+tolerance induction
+label: tolerance induction
+type:> owl:Class
+editor preferred term~editor preferred label: tolerance induction
+textual definition: A process that directly activates any of the steps required for tolerance, a physiologic state in which the immune system does not react destructively against the components of an organism that harbors it or against antigens that are introduced to it.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+B cell tolerance induction
+label: B cell tolerance induction
+type:> owl:Class
+editor preferred term~editor preferred label: B cell tolerance induction
+textual definition: A process involving any mechanism for tolerance induction in B cells.
+imported from:> obo:go.owl
+subclass of:> tolerance induction
+
+T cell tolerance induction
+label: T cell tolerance induction
+type:> owl:Class
+editor preferred term~editor preferred label: T cell tolerance induction
+textual definition: A process involving any mechanism for tolerance induction in T cells.
+imported from:> obo:go.owl
+subclass of:> tolerance induction
+
+hypersensitivity
+label: hypersensitivity
+type:> owl:Class
+editor preferred term~editor preferred label: hypersensitivity
+textual definition: An inflammatory response to an exogenous environmental antigen or an endogenous antigen initiated by the adaptive immune system.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+cytokine production involved in inflammatory response
+label: cytokine production involved in inflammatory response
+type:> owl:Class
+editor preferred term~editor preferred label: cytokine production involved in inflammatory response
+textual definition: The synthesis or release of a cytokine following a inflammatory stimulus as part of an inflammatory response, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+molecular_function
+label: molecular_function
+type:> owl:Class
+editor preferred term~editor preferred label: molecular_function
+textual definition: Elemental activities, such as catalysis or binding, describing the actions of a gene product at the molecular level. A given gene product may exhibit one or more molecular functions.
+imported from:> obo:go.owl
+subclass of:> function
+
+antigen binding
+label: antigen binding
+type:> owl:Class
+editor preferred term~editor preferred label: antigen binding
+textual definition: Interacting selectively and non-covalently with an antigen, any substance which is capable of inducing a specific immune response and of reacting with the products of that response, the specific antibody or specifically sensitized T-lymphocytes, or both. Binding may counteract the biological activity of the antigen.
+imported from:> obo:go.owl
+subclass of:> process
+
+catalytic activity
+label: catalytic activity
+type:> owl:Class
+editor preferred term~editor preferred label: catalytic activity
+textual definition: Catalysis of a biochemical reaction at physiological temperatures. In biologically catalyzed reactions, the reactants are known as substrates, and the catalysts are naturally occurring macromolecular substances known as enzymes. Enzymes possess specific binding sites for substrates, and are usually composed wholly or largely of protein, but RNA that has catalytic activity (ribozyme) is often also regarded as enzymatic.
+imported from:> obo:go.owl
+subclass of:> molecular_function
+
+RNA-directed DNA polymerase activity
+label: RNA-directed DNA polymerase activity
+type:> owl:Class
+editor preferred term~editor preferred label: RNA-directed DNA polymerase activity
+textual definition: Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1). Catalyzes RNA-template-directed extension of the 3'- end of a DNA strand by one deoxynucleotide at a time.
+imported from:> obo:go.owl
+subclass of:> catalytic activity
+
+ion channel activity
+label: ion channel activity
+type:> owl:Class
+editor preferred term~editor preferred label: ion channel activity
+textual definition: Catalysis of facilitated diffusion of an ion (by an energy-independent process) by passage through a transmembrane aqueous pore or channel without evidence for a carrier-mediated mechanism.
+imported from:> obo:go.owl
+subclass of:> cellular process
+
+cellular_component
+label: cellular_component
+type:> owl:Class
+editor preferred term~editor preferred label: cellular_component
+textual definition: The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.
+imported from:> obo:go.owl
+subclass of:> material entity
+
+chromosome
+label: chromosome
+type:> owl:Class
+editor preferred term~editor preferred label: chromosome
+textual definition: A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information.
+imported from:> obo:go.owl
+subclass of:> cellular_component
+
+mitochondrion
+label: mitochondrion
+type:> owl:Class
+editor preferred term~editor preferred label: mitochondrion
+textual definition: A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.
+imported from:> obo:go.owl
+subclass of:> membrane-bounded organelle
+
+glucose metabolic process
+label: glucose metabolic process
+type:> owl:Class
+editor preferred term~editor preferred label: glucose metabolic process
+textual definition: The chemical reactions and pathways involving glucose, the aldohexose gluco-hexose. D-glucose is dextrorotatory and is sometimes known as dextrose; it is an important source of energy for living organisms and is found free as well as combined in homo- and hetero-oligosaccharides and polysaccharides.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+DNA replication
+label: DNA replication
+type:> owl:Class
+editor preferred term~editor preferred label: DNA replication
+textual definition: The cellular metabolic process in which a cell duplicates one or more molecules of DNA. DNA replication begins when specific sequences, known as origins of replication, are recognized and bound by initiation proteins, and ends when the original DNA molecule has been completely duplicated and the copies topologically separated. The unit of replication usually corresponds to the genome of the cell, an organelle, or a virus. The template for replication can either be an existing DNA molecule or RNA.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+DNA methylation
+label: DNA methylation
+type:> owl:Class
+editor preferred term~editor preferred label: DNA methylation
+textual definition: The covalent transfer of a methyl group to either N-6 of adenine or C-5 or N-4 of cytosine.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+chromatin remodeling
+label: chromatin remodeling
+type:> owl:Class
+editor preferred term~editor preferred label: chromatin remodeling
+textual definition: Dynamic structural changes to eukaryotic chromatin occurring throughout the cell division cycle. These changes range from the local changes necessary for transcriptional regulation to global changes necessary for chromosome segregation.
+imported from:> obo:go.owl
+subclass of:> cellular process
+
+phagocytosis
+label: phagocytosis
+type:> owl:Class
+editor preferred term~editor preferred label: phagocytosis
+textual definition: An endocytosis process that results in the engulfment of external particulate material by phagocytes. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+immune response
+label: immune response
+type:> owl:Class
+editor preferred term~editor preferred label: immune response
+textual definition: Any immune system process that functions in the calibrated response of an organism to a potential internal or invasive threat.
+imported from:> obo:go.owl
+subclass of:> response to stimulus
+
+cellular response to DNA damage stimulus
+label: cellular response to DNA damage stimulus
+type:> owl:Class
+editor preferred term~editor preferred label: cellular response to DNA damage stimulus
+textual definition: Any process that results in a change in state or activity of a cell (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus indicating damage to its DNA from environmental insults or errors during metabolism.
+imported from:> obo:go.owl
+subclass of:> response to stimulus
+
+cell cycle
+label: cell cycle
+type:> owl:Class
+editor preferred term~editor preferred label: cell cycle
+textual definition: The progression of biochemical and morphological phases and events that occur in a cell during successive cell replication or nuclear replication events. Canonically, the cell cycle comprises the replication and segregation of genetic material followed by the division of the cell, but in endocycles or syncytial cells nuclear replication or nuclear division may not be followed by cell division.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+blood coagulation
+label: blood coagulation
+type:> owl:Class
+editor preferred term~editor preferred label: blood coagulation
+textual definition: The sequential process in which the multiple coagulation factors of the blood interact, ultimately resulting in the formation of an insoluble fibrin clot; it may be divided into three stages: stage 1, the formation of intrinsic and extrinsic prothrombin converting principle; stage 2, the formation of thrombin; stage 3, the formation of stable fibrin polymers.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+biological_process
+label: biological_process
+type:> owl:Class
+editor preferred term~editor preferred label: biological_process
+textual definition: Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.
+imported from:> obo:go.owl
+subclass of:> process
+
+opsonization
+label: opsonization
+type:> owl:Class
+editor preferred term~editor preferred label: opsonization
+textual definition: The process in which a microorganism (or other particulate material) is rendered more susceptible to phagocytosis by coating with an opsonin, a blood serum protein such as a complement component or antibody.
+imported from:> obo:go.owl
+subclass of:> phagocytosis
+
+cell proliferation
+label: cell proliferation
+type:> owl:Class
+editor preferred term~editor preferred label: cell proliferation
+textual definition: The multiplication or reproduction of cells, resulting in the expansion of a cell population.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+fertilization
+label: fertilization
+type:> owl:Class
+editor preferred term~editor preferred label: fertilization
+textual definition: The union of gametes of opposite sexes during the process of sexual reproduction to form a zygote. It involves the fusion of the gametic nuclei (karyogamy) and cytoplasm (plasmogamy).
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+cellular process
+label: cellular process
+type:> owl:Class
+editor preferred term~editor preferred label: cellular process
+textual definition: Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+gene expression
+label: gene expression
+type:> owl:Class
+editor preferred term~editor preferred label: gene expression
+textual definition: The process in which a gene's sequence is converted into a mature gene product or products (proteins or RNA). This includes the production of an RNA transcript as well as any processing to produce a mature RNA product or an mRNA (for protein-coding genes) and the translation of that mRNA into protein. Some protein processing events may be included when they are required to form an active form of a product from an inactive precursor form.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+vascular endothelial growth factor production
+label: vascular endothelial growth factor production
+type:> owl:Class
+editor preferred term~editor preferred label: vascular endothelial growth factor production
+textual definition: The appearance of vascular endothelial growth factor production due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+immunoglobulin mediated immune response
+label: immunoglobulin mediated immune response
+type:> owl:Class
+editor preferred term~editor preferred label: immunoglobulin mediated immune response
+textual definition: An immune response mediated by immunoglobulins, whether cell-bound or in solution.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+histone modification
+label: histone modification
+type:> owl:Class
+editor preferred term~editor preferred label: histone modification
+textual definition: The covalent alteration of one or more amino acid residues within a histone protein.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+immunoglobulin complex
+label: immunoglobulin complex
+type:> owl:Class
+editor preferred term~editor preferred label: immunoglobulin complex
+textual definition: A protein complex that in its canonical form is composed of two identical immunoglobulin heavy chains and two identical immunoglobulin light chains, held together by disulfide bonds and sometimes complexed with additional proteins. An immunoglobulin complex may be embedded in the plasma membrane or present in the extracellular space, in mucosal areas or other tissues, or circulating in the blood or lymph.
+imported from:> obo:go.owl
+subclass of:> protein complex
+
+B cell receptor complex
+label: B cell receptor complex
+type:> owl:Class
+editor preferred term~editor preferred label: B cell receptor complex
+textual definition: An immunoglobulin complex that is present in the plasma membrane of B cells and that in its canonical form is composed of two identical immunoglobulin heavy chains and two identical immunoglobulin light chains and a signaling subunit, a heterodimer of the Ig-alpha and Ig-beta proteins.
+imported from:> obo:go.owl
+subclass of:> protein complex
+
+antigen processing and presentation
+label: antigen processing and presentation
+type:> owl:Class
+editor preferred term~editor preferred label: antigen processing and presentation
+textual definition: The process in which an antigen-presenting cell expresses antigen (peptide or lipid) on its cell surface in association with an MHC protein complex.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+protein domain specific binding
+label: protein domain specific binding
+type:> owl:Class
+editor preferred term~editor preferred label: protein domain specific binding
+textual definition: Interacting selectively and non-covalently with a specific domain of a protein.
+imported from:> obo:go.owl
+subclass of:> binding
+
+actin filament polymerization
+label: actin filament polymerization
+type:> owl:Class
+editor preferred term~editor preferred label: actin filament polymerization
+textual definition: Assembly of actin filaments by the addition of actin monomers to a filament.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+hemopoiesis
+label: hemopoiesis
+type:> owl:Class
+editor preferred term~editor preferred label: hemopoiesis
+textual definition: The process whose specific outcome is the progression of the myeloid and lymphoid derived organ/tissue systems of the blood and other parts of the body over time, from formation to the mature structure. The site of hemopoiesis is variable during development, but occurs primarily in bone marrow or kidney in many adult vertebrates.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+connective tissue growth factor production
+label: connective tissue growth factor production
+type:> owl:Class
+editor preferred term~editor preferred label: connective tissue growth factor production
+textual definition: The appearance of connective tissue growth factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+chemokine production
+label: chemokine production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine production
+textual definition: The appearance of a chemokine due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+granulocyte macrophage colony-stimulating factor production
+label: granulocyte macrophage colony-stimulating factor production
+type:> owl:Class
+editor preferred term~editor preferred label: granulocyte macrophage colony-stimulating factor production
+textual definition: The appearance of granulocyte macrophage colony-stimulating factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+hepatocyte growth factor production
+label: hepatocyte growth factor production
+type:> owl:Class
+editor preferred term~editor preferred label: hepatocyte growth factor production
+textual definition: The appearance of hepatocyte growth factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+type I interferon production
+label: type I interferon production
+type:> owl:Class
+editor preferred term~editor preferred label: type I interferon production
+textual definition: The appearance of type I interferon due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels. Type I interferons include the interferon-alpha, beta, delta, episilon, zeta, kappa, tau, and omega gene families.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interferon-beta production
+label: interferon-beta production
+type:> owl:Class
+editor preferred term~editor preferred label: interferon-beta production
+textual definition: The appearance of interferon-beta due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interferon-gamma production
+label: interferon-gamma production
+type:> owl:Class
+editor preferred term~editor preferred label: interferon-gamma production
+textual definition: The appearance of interferon-gamma due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels. Interferon-gamma is also known as type II interferon.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-1 alpha production
+label: interleukin-1 alpha production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-1 alpha production
+textual definition: The appearance of interleukin-1 alpha due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> interleukin-1 production
+
+interleukin-1 beta production
+label: interleukin-1 beta production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-1 beta production
+textual definition: The appearance of interleukin-1 beta due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> interleukin-1 production
+
+interleukin-1 production
+label: interleukin-1 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-1 production
+textual definition: The appearance of interleukin-1 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-10 production
+label: interleukin-10 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-10 production
+textual definition: The appearance of interleukin-10 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-11 production
+label: interleukin-11 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-11 production
+textual definition: The appearance of interleukin-11 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-12 production
+label: interleukin-12 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-12 production
+textual definition: The appearance of interleukin-12 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-13 production
+label: interleukin-13 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-13 production
+textual definition: The appearance of interleukin-13 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-14 production
+label: interleukin-14 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-14 production
+textual definition: The appearance of interleukin-14 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-15 production
+label: interleukin-15 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-15 production
+textual definition: The appearance of interleukin-15 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-16 production
+label: interleukin-16 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-16 production
+textual definition: The appearance of interleukin-16 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-17 production
+label: interleukin-17 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-17 production
+textual definition: The appearance of any member of the interleukin-17 family of cytokines due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-18 production
+label: interleukin-18 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-18 production
+textual definition: The appearance of interleukin-18 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-19 production
+label: interleukin-19 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-19 production
+textual definition: The appearance of interleukin-19 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-2 production
+label: interleukin-2 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-2 production
+textual definition: The appearance of interleukin-2 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-20 production
+label: interleukin-20 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-20 production
+textual definition: The appearance of interleukin-20 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-21 production
+label: interleukin-21 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-21 production
+textual definition: The appearance of interleukin-21 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-22 production
+label: interleukin-22 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-22 production
+textual definition: The appearance of interleukin-22 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-23 production
+label: interleukin-23 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-23 production
+textual definition: The appearance of interleukin-23 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-24 production
+label: interleukin-24 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-24 production
+textual definition: The appearance of interleukin-24 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-25 production
+label: interleukin-25 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-25 production
+textual definition: The appearance of interleukin-25 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-26 production
+label: interleukin-26 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-26 production
+textual definition: The appearance of interleukin-26 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-27 production
+label: interleukin-27 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-27 production
+textual definition: The appearance of interleukin-27 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-3 production
+label: interleukin-3 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-3 production
+textual definition: The appearance of interleukin-3 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-4 production
+label: interleukin-4 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-4 production
+textual definition: The appearance of interleukin-4 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-5 production
+label: interleukin-5 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-5 production
+textual definition: The appearance of interleukin-5 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-6 production
+label: interleukin-6 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-6 production
+textual definition: The appearance of interleukin-6 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-7 production
+label: interleukin-7 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-7 production
+textual definition: The appearance of interleukin-7 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-8 production
+label: interleukin-8 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-8 production
+textual definition: The appearance of interleukin-8 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+interleukin-9 production
+label: interleukin-9 production
+type:> owl:Class
+editor preferred term~editor preferred label: interleukin-9 production
+textual definition: The appearance of interleukin-9 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+TRAIL production
+label: TRAIL production
+type:> owl:Class
+editor preferred term~editor preferred label: TRAIL production
+textual definition: The appearance of TRAIL due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+tumor necrosis factor production
+label: tumor necrosis factor production
+type:> owl:Class
+editor preferred term~editor preferred label: tumor necrosis factor production
+textual definition: The appearance of tumor necrosis factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> tumor necrosis factor superfamily cytokine production
+
+lymphotoxin A production
+label: lymphotoxin A production
+type:> owl:Class
+editor preferred term~editor preferred label: lymphotoxin A production
+textual definition: The appearance of lymphotoxin A due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> tumor necrosis factor superfamily cytokine production
+
+transforming growth factor beta1 production
+label: transforming growth factor beta1 production
+type:> owl:Class
+editor preferred term~editor preferred label: transforming growth factor beta1 production
+textual definition: The appearance of transforming growth factor-beta1 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+transforming growth factor beta2 production
+label: transforming growth factor beta2 production
+type:> owl:Class
+editor preferred term~editor preferred label: transforming growth factor beta2 production
+textual definition: The appearance of transforming growth factor-beta2 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+transforming growth factor beta3 production
+label: transforming growth factor beta3 production
+type:> owl:Class
+editor preferred term~editor preferred label: transforming growth factor beta3 production
+textual definition: The appearance of transforming growth factor-beta3 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+macromolecule localization
+label: macromolecule localization
+type:> owl:Class
+editor preferred term~editor preferred label: macromolecule localization
+textual definition: Any process in which a macromolecule is transported to, or maintained in, a specific location.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+DNA polymerase activity
+label: DNA polymerase activity
+type:> owl:Class
+editor preferred term~editor preferred label: DNA polymerase activity
+textual definition: Catalysis of the reaction: deoxynucleoside triphosphate + DNA(n) = diphosphate + DNA(n+1); the synthesis of DNA from deoxyribonucleotide triphosphates in the presence of a nucleic acid template and a 3'hydroxyl group.
+imported from:> obo:go.owl
+subclass of:> catalytic activity
+
+type III interferon production
+label: type III interferon production
+type:> owl:Class
+editor preferred term~editor preferred label: type III interferon production
+textual definition: The appearance of type III interferon due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels. Interferon lambda is the only member of the type III interferon found so far.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+chemokine (C-X-C motif) ligand 9 production
+label: chemokine (C-X-C motif) ligand 9 production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine (C-X-C motif) ligand 9 production
+textual definition: The appearance of chemokine (C-X-C motif) ligand 9 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+helper T cell enhancement of adaptive immune response
+label: helper T cell enhancement of adaptive immune response
+type:> owl:Class
+editor preferred term~editor preferred label: helper T cell enhancement of adaptive immune response
+textual definition: Positive regulation of an adaptive immune response mediated via cytokine production by helper T cell.
+imported from:> obo:go.owl
+subclass of:> adaptive immune response
+
+helper T cell enhancement of T cell mediated immune response
+label: helper T cell enhancement of T cell mediated immune response
+type:> owl:Class
+editor preferred term~editor preferred label: helper T cell enhancement of T cell mediated immune response
+textual definition: Positive regulation of a T cell mediated immune response mediated via cytokine production by a helper T cell.
+imported from:> obo:go.owl
+subclass of:> helper T cell enhancement of adaptive immune response
+
+helper T cell enhancement of B cell mediated immune response
+label: helper T cell enhancement of B cell mediated immune response
+type:> owl:Class
+editor preferred term~editor preferred label: helper T cell enhancement of B cell mediated immune response
+textual definition: Positive regulation of a B cell mediated immune response mediated via cytokine production by a helper T cell.
+imported from:> obo:go.owl
+subclass of:> helper T cell enhancement of adaptive immune response
+
+granzyme A production
+label: granzyme A production
+type:> owl:Class
+editor preferred term~editor preferred label: granzyme A production
+textual definition: The appearance of granzyme A due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+perforin production
+label: perforin production
+type:> owl:Class
+editor preferred term~editor preferred label: perforin production
+textual definition: The appearance of a perforin protein due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+granulysin production
+label: granulysin production
+type:> owl:Class
+editor preferred term~editor preferred label: granulysin production
+textual definition: The appearance of granulysin due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+regulation of gene expression, epigenetic
+label: regulation of gene expression, epigenetic
+type:> owl:Class
+editor preferred term~editor preferred label: regulation of gene expression, epigenetic
+textual definition: Any process that modulates the frequency, rate or extent of gene expression; the process is mitotically or meiotically heritable, or is stably self-propagated in the cytoplasm of a resting cell, and does not entail a change in DNA sequence.
+imported from:> obo:go.owl
+subclass of:> regulation of molecular function, epigenetic
+
+regulation of molecular function, epigenetic
+label: regulation of molecular function, epigenetic
+type:> owl:Class
+editor preferred term~editor preferred label: regulation of molecular function, epigenetic
+textual definition: Any heritable epigenetic process that modulates the frequency, rate or extent of protein function by self-perpetuating conformational conversions of normal proteins in healthy cells. This is distinct from, though mechanistically analogous to, disease states associated with prion propagation and amyloidogenesis. A single protein, if it carries a glutamine/asparagine-rich ('prion') domain, can sometimes stably exist in at least two distinct physical states, each associated with a different phenotype; propagation of one of these traits is achieved by a self-perpetuating change in the protein from one form to the other, mediated by conformational changes in the glutamine/asparagine-rich domain. Prion domains are both modular and transferable to other proteins, on which they can confer a heritable epigenetic alteration of function; existing bioinformatics data indicate that they are rare in non-eukarya, but common in eukarya.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+T cell proliferation
+label: T cell proliferation
+type:> owl:Class
+editor preferred term~editor preferred label: T cell proliferation
+textual definition: The expansion of a T cell population by cell division. Follows T cell activation.
+imported from:> obo:go.owl
+subclass of:> cell proliferation
+
+T cell receptor complex
+label: T cell receptor complex
+type:> owl:Class
+editor preferred term~editor preferred label: T cell receptor complex
+textual definition: A protein complex that contains a disulfide-linked heterodimer of T cell receptor (TCR) chains, which are members of the immunoglobulin superfamily, and mediates antigen recognition, ultimately resulting in T cell activation. The TCR heterodimer is associated with the CD3 complex, which consists of the nonpolymorphic polypeptides gamma, delta, epsilon, zeta, and, in some cases, eta (an RNA splice variant of zeta) or Fc epsilon chains.
+imported from:> obo:go.owl
+subclass of:> protein complex
+
+T cell activation
+label: T cell activation
+type:> owl:Class
+editor preferred term~editor preferred label: T cell activation
+textual definition: The change in morphology and behavior of a mature or immature T cell resulting from exposure to a mitogen, cytokine, chemokine, cellular ligand, or an antigen for which it is specific.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+immunoglobulin complex, circulating
+label: immunoglobulin complex, circulating
+type:> owl:Class
+editor preferred term~editor preferred label: immunoglobulin complex, circulating
+textual definition: An immunoglobulin complex that is secreted into extracellular space and found in mucosal areas or other tissues or circulating in the blood or lymph. In its canonical form, a circulating immunoglobulin complex is composed of two identical heavy chains and two identical light chains, held together by disulfide bonds. Some forms of are polymers of the basic structure and contain additional components such as J-chain and the secretory component.
+imported from:> obo:go.owl
+subclass of:> immunoglobulin complex
+
+DNA polymerase complex
+label: DNA polymerase complex
+type:> owl:Class
+editor preferred term~editor preferred label: DNA polymerase complex
+textual definition: A protein complex that possesses DNA polymerase activity and is involved in template directed synthesis of DNA.
+imported from:> obo:go.owl
+subclass of:> protein complex
+
+peptide antigen binding
+label: peptide antigen binding
+type:> owl:Class
+editor preferred term~editor preferred label: peptide antigen binding
+textual definition: Interacting selectively and non-covalently with an antigen peptide.
+imported from:> obo:go.owl
+subclass of:> antigen binding
+
+MHC protein complex
+label: MHC protein complex
+type:> owl:Class
+editor preferred term~editor preferred label: MHC protein complex
+textual definition: A transmembrane protein complex composed of an MHC alpha chain and, in most cases, either an MHC class II beta chain or an invariant beta2-microglobin chain, and with or without a bound peptide, lipid, or polysaccharide antigen.
+imported from:> obo:go.owl
+subclass of:> protein complex
+
+membrane-bounded organelle
+label: membrane-bounded organelle
+type:> owl:Class
+editor preferred term~editor preferred label: membrane-bounded organelle
+textual definition: Organized structure of distinctive morphology and function, bounded by a single or double lipid bilayer membrane. Includes the nucleus, mitochondria, plastids, vacuoles, and vesicles. Excludes the plasma membrane.
+imported from:> obo:go.owl
+subclass of:> cellular_component
+
+protein complex
+label: protein complex
+type:> owl:Class
+editor preferred term~editor preferred label: protein complex
+textual definition: Any macromolecular complex composed (only) of two or more polypeptide subunits along with any covalently attached molecules (such as lipid anchors or oligosaccharide) or non-protein prosthetic groups (such as nucleotides or metal ions). Prosthetic group in this context refers to a tightly bound cofactor. The component polypeptide subunits may be identical.
+imported from:> obo:go.owl
+subclass of:> material entity
+
+cytotoxic T cell degranulation
+label: cytotoxic T cell degranulation
+type:> owl:Class
+editor preferred term~editor preferred label: cytotoxic T cell degranulation
+textual definition: The regulated exocytosis of secretory granules containing preformed mediators such as perforin and granzymes by a cytotoxic T cell.
+imported from:> obo:go.owl
+subclass of:> cell killing
+
+sequence-specific DNA binding
+label: sequence-specific DNA binding
+type:> owl:Class
+editor preferred term~editor preferred label: sequence-specific DNA binding
+textual definition: Interacting selectively and non-covalently with DNA of a specific nucleotide composition, e.g. GC-rich DNA binding, or with a specific sequence motif or type of DNA e.g. promotor binding or rDNA binding.
+imported from:> obo:go.owl
+subclass of:> binding
+
+regulation of DNA methylation
+label: regulation of DNA methylation
+type:> owl:Class
+editor preferred term~editor preferred label: regulation of DNA methylation
+textual definition: Any process that modulates the frequency, rate or extent of the covalent transfer of a methyl group to either N-6 of adenine or C-5 or N-4 of cytosine.
+imported from:> obo:go.owl
+subclass of:> regulation of molecular function, epigenetic
+
+macrophage migration inhibitory factor production
+label: macrophage migration inhibitory factor production
+type:> owl:Class
+editor preferred term~editor preferred label: macrophage migration inhibitory factor production
+textual definition: The appearance of macrophage migration inhibitory factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+Oncostatin M production
+label: Oncostatin M production
+type:> owl:Class
+editor preferred term~editor preferred label: Oncostatin M production
+textual definition: The appearance of Oncostatin M due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+chemokine (C-C motif) ligand 17 production
+label: chemokine (C-C motif) ligand 17 production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine (C-C motif) ligand 17 production
+textual definition: The appearance of chemokine (C-C motif) ligand 17 (CCL17) due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+cellular developmental process
+label: cellular developmental process
+type:> owl:Class
+editor preferred term~editor preferred label: cellular developmental process
+textual definition: A biological process whose specific outcome is the progression of a cell over time from an initial condition to a later condition.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+response to stimulus
+label: response to stimulus
+type:> owl:Class
+editor preferred term~editor preferred label: response to stimulus
+textual definition: Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+chromosome organization
+label: chromosome organization
+type:> owl:Class
+editor preferred term~editor preferred label: chromosome organization
+textual definition: A process that is carried out at the cellular level that results in the assembly, arrangement of constituent parts, or disassembly of chromosomes, structures composed of a very long molecule of DNA and associated proteins that carries hereditary information. This term covers covalent modifications at the molecular level as well as spatial relationships among the major components of a chromosome.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+actin polymerization-dependent cell motility
+label: actin polymerization-dependent cell motility
+type:> owl:Class
+editor preferred term~editor preferred label: actin polymerization-dependent cell motility
+textual definition: A process involved in the controlled movement of a bacterial cell powered by the continuous polymerization of actin at one pole of the cell.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+transforming growth factor beta production
+label: transforming growth factor beta production
+type:> owl:Class
+editor preferred term~editor preferred label: transforming growth factor beta production
+textual definition: The appearance of any member of the transforming growth factor-beta family of cytokines due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels. Transforming growth factor-beta family members include TGF-B1, TGF-B2, and TGF-B3.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+monocyte chemotactic protein-1 production
+label: monocyte chemotactic protein-1 production
+type:> owl:Class
+editor preferred term~editor preferred label: monocyte chemotactic protein-1 production
+textual definition: The appearance of monocyte chemotactic protein-1 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+chemokine (C-C motif) ligand 4 production
+label: chemokine (C-C motif) ligand 4 production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine (C-C motif) ligand 4 production
+textual definition: The appearance of chemokine (C-C motif) ligand 4 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+macrophage inflammatory protein-1 gamma production
+label: macrophage inflammatory protein-1 gamma production
+type:> owl:Class
+editor preferred term~editor preferred label: macrophage inflammatory protein-1 gamma production
+textual definition: The appearance of macrophage inflammatory protein-1 gamma due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+macrophage inflammatory protein-1 alpha production
+label: macrophage inflammatory protein-1 alpha production
+type:> owl:Class
+editor preferred term~editor preferred label: macrophage inflammatory protein-1 alpha production
+textual definition: The appearance of macrophage inflammatory protein 1 alpha due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+chemokine (C-C motif) ligand 5 production
+label: chemokine (C-C motif) ligand 5 production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine (C-C motif) ligand 5 production
+textual definition: The appearance of chemokine (C-C motif) ligand 5 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+chemokine (C-C motif) ligand 1 production
+label: chemokine (C-C motif) ligand 1 production
+type:> owl:Class
+editor preferred term~editor preferred label: chemokine (C-C motif) ligand 1 production
+textual definition: The appearance of chemokine (C-C motif) ligand 1 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+granulocyte colony-stimulating factor production
+label: granulocyte colony-stimulating factor production
+type:> owl:Class
+editor preferred term~editor preferred label: granulocyte colony-stimulating factor production
+textual definition: The appearance of granulocyte colony-stimulating factor due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> cytokine production
+
+IP-10 production
+label: IP-10 production
+type:> owl:Class
+editor preferred term~editor preferred label: IP-10 production
+textual definition: The appearance of IP-10 due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> chemokine production
+
+granzyme B production
+label: granzyme B production
+type:> owl:Class
+editor preferred term~editor preferred label: granzyme B production
+textual definition: The appearance of granzyme B due to biosynthesis or secretion following a cellular stimulus, resulting in an increase in its intracellular or extracellular levels.
+imported from:> obo:go.owl
+subclass of:> biological_process
+
+tumor necrosis factor superfamily cytokine production
+label: tumor necrosis factor superfamily cytokine production
+type:> owl:Class
+editor preferred term~editor preferred label: 

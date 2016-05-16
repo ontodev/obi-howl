@@ -1,0 +1,272 @@
+editor preferred term~editor preferred label
+type:> owl:AnnotationProperty
+
+textual definition
+label: definition
+type:> owl:AnnotationProperty
+editor preferred term~editor preferred label: definition
+
+imported from
+label: imported from@en
+type:> owl:AnnotationProperty
+
+length unit
+type:> owl:Class
+
+mass unit
+type:> owl:Class
+
+time unit
+type:> owl:Class
+
+temperature unit
+type:> owl:Class
+
+substance unit
+type:> owl:Class
+
+meter
+label: meter
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: meter
+textual definition: A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.
+imported from:> obo:uo.owl
+
+kilogram
+label: kilogram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: kilogram
+textual definition: A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France.
+imported from:> obo:uo.owl
+
+second
+label: second
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: second
+textual definition: A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.
+imported from:> obo:uo.owl
+
+centimeter
+label: centimeter
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: centimeter
+textual definition: A length unit which is equal to one hundredth of a meter or 10^[-2] m.
+imported from:> obo:uo.owl
+
+millimeter
+label: millimeter
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: millimeter
+textual definition: A length unit which is equal to one thousandth of a meter or 10^[-3] m.
+imported from:> obo:uo.owl
+
+micrometer
+label: micrometer
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: micrometer
+textual definition: A length unit which is equal to one millionth of a meter or 10^[-6] m.
+imported from:> obo:uo.owl
+
+nanometer
+label: nanometer
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: nanometer
+textual definition: A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.
+imported from:> obo:uo.owl
+
+angstrom
+label: angstrom
+type:> owl:NamedIndividual
+type:> length unit
+editor preferred term~editor preferred label: angstrom
+textual definition: A length unit which is equal to 10 [-10] m.
+imported from:> obo:uo.owl
+
+gram
+label: gram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: gram
+textual definition: A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg.
+imported from:> obo:uo.owl
+
+milligram
+label: milligram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: milligram
+textual definition: A mass unit which is equal to one thousandth of a gram or 10^[-3] g.
+imported from:> obo:uo.owl
+
+microgram
+label: microgram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: microgram
+textual definition: A mass unit which is equal to one millionth of a gram or 10^[-6] g.
+imported from:> obo:uo.owl
+
+nanogram
+label: nanogram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: nanogram
+textual definition: A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.
+imported from:> obo:uo.owl
+
+picogram
+label: picogram
+type:> owl:NamedIndividual
+type:> mass unit
+editor preferred term~editor preferred label: picogram
+textual definition: A mass unit which is equal to 10^[-12] g.
+imported from:> obo:uo.owl
+
+degree Celsius
+label: degree Celsius
+type:> owl:NamedIndividual
+type:> temperature unit
+editor preferred term~editor preferred label: degree Celsius
+textual definition: A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.
+imported from:> obo:uo.owl
+
+minute
+label: minute
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: minute
+textual definition: A time unit which is equal to 60 seconds.
+imported from:> obo:uo.owl
+
+hour
+label: hour
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: hour
+textual definition: A time unit which is equal to 3600 seconds or 60 minutes.
+imported from:> obo:uo.owl
+
+day
+label: day
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: day
+textual definition: A time unit which is equal to 24 hours.
+imported from:> obo:uo.owl
+
+week
+label: week
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: week
+textual definition: A time unit which is equal to 7 days.
+imported from:> obo:uo.owl
+
+month
+label: month
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: month
+textual definition: A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days.
+imported from:> obo:uo.owl
+
+year
+label: year
+type:> owl:NamedIndividual
+type:> time unit
+editor preferred term~editor preferred label: year
+textual definition: A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days.
+imported from:> obo:uo.owl
+
+micromole
+label: micromole
+type:> owl:NamedIndividual
+type:> substance unit
+editor preferred term~editor preferred label: micromole
+textual definition: A substance unit equal to a millionth of a mol or 10^[-6] mol.
+imported from:> obo:uo.owl
+
+nanomole
+label: nanomole
+type:> owl:NamedIndividual
+type:> substance unit
+editor preferred term~editor preferred label: nanomole
+textual definition: A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol.
+imported from:> obo:uo.owl
+
+picomole
+label: picomole
+type:> owl:NamedIndividual
+type:> substance unit
+editor preferred term~editor preferred label: picomole
+textual definition: A substance unit equal to 10^[-12] mol.
+imported from:> obo:uo.owl
+
+concentration unit
+type:> owl:Class
+
+molar
+label: molar
+type:> owl:NamedIndividual
+type:> concentration unit
+editor preferred term~editor preferred label: molar
+textual definition: A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).
+imported from:> obo:uo.owl
+
+millimolar
+label: millimolar
+type:> owl:NamedIndividual
+type:> concentration unit
+editor preferred term~editor preferred label: millimolar
+textual definition: A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.
+imported from:> obo:uo.owl
+
+micromolar
+label: micromolar
+type:> owl:NamedIndividual
+type:> concentration unit
+editor preferred term~editor preferred label: micromolar
+textual definition: A unit of molarity which is equal to one millionth of a molar or 10^[-6] M.
+imported from:> obo:uo.owl
+
+nanomolar
+label: nanomolar
+type:> owl:NamedIndividual
+type:> concentration unit
+editor preferred term~editor preferred label: nanomolar
+textual definition: A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.
+imported from:> obo:uo.owl
+
+picomolar
+label: picomolar
+type:> owl:NamedIndividual
+type:> concentration unit
+editor preferred term~editor preferred label: picomolar
+textual definition: A unit of molarity which is equal to 10^[-12] M.
+imported from:> obo:uo.owl
+
+volume unit
+type:> owl:Class
+
+cubic centimeter
+label: cubic centimeter
+type:> owl:NamedIndividual
+type:> volume unit
+editor preferred term~editor preferred label: cubic centimeter
+textual definition: A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.
+imported from:> obo:uo.owl
+
+milliliter
+label: milliliter
+type:> owl:NamedIndividual
+type:> volume unit
+editor preferred term~editor preferred label: milliliter
+textual definition: A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.
+imp

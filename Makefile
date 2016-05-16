@@ -15,7 +15,7 @@ MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
 .DEFAULT_GOAL := all
-.DELETE_ON_ERROR:
+#.DELETE_ON_ERROR:
 .SUFFIXES:
 .SECONDARY:
 
@@ -24,26 +24,35 @@ OBI_VERSION_IRI := http://purl.obolibrary.org/obo/obi/$(OBI_VERSION)/obi.owl
 APACHE_MIRROR := http://www.us.apache.org/dist
 SPARQL_URL := http://localhost:3030/db
 
+# Use awk with tabs.
+AWK := awk -F "	" -v "OFS=	"
 
 # Old OBI
 #
 # Fetch selected OBI files from SourceForge Subversion.
 
-old:
+svn:
 	mkdir -p $@
-	svn checkout --depth=empty svn://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/ $@
-	svn update $@/obi.owl
-	svn update $@/catalog-v001.xml
-	svn update $@/doap.template
-	svn update $@/external-byhand.owl
-	svn update --depth=infinity $@/OntoFox_inputs
-	svn update --depth=infinity $@/OntoFox_outputs
-	svn update --depth=infinity $@/templates
-	svn update --depth=infinity $@/modules
+
+svn/import:
+	mkdir -p $@
+
+.PHONY: fetch-svn
+fetch-svn: | svn svn/import
+	svn checkout --depth=empty svn://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/ svn
+	svn update svn/obi.owl
+	svn update svn/catalog-v001.xml
+	svn update svn/doap.template
+	svn update svn/external-byhand.owl
+	svn update --depth=infinity svn/OntoFox_inputs
+	svn update --depth=infinity svn/OntoFox_outputs
+	svn update --depth=infinity svn/templates
+	svn update --depth=infinity svn/modules
+	cp svn/OntoFox_outputs/*.owl svn/import/
 
 # Fetch a recent OBI release.
 
-old/obi-$(OBI_VERSION).owl: | old
+svn/obi-$(OBI_VERSION).owl: | svn
 	curl -Lo $@ $(OBI_VERSION_IRI)
 
 
@@ -94,7 +103,7 @@ lib/fuseki/shiro.ini: | lib/fuseki
 #     make fuseki
 
 .PHONY: fuseki-obi
-fuseki-obi: old/obi-$(OBI_VERSION).owl | lib/jena/bin/tdbloader lib/fuseki
+fuseki-obi: svn/obi-$(OBI_VERSION).owl | lib/jena/bin/tdbloader lib/fuseki
 	$(word 1,$|) --loc $(word 2,$|)/tdb $<
 
 # Run Fuseki in a second shell!
@@ -160,12 +169,104 @@ ontology/metadata.howl: src/metadata.rq
 	>> $@
 
 
+### Convert Imports
+
+import:
+	mkdir -p $@
+
+svn/import/BFO_classes_only.owl: | import
+	curl -Lo $@ http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl
+
+svn/import/RO_core.owl: | import
+	curl -Lo $@ http://purl.obolibrary.org/obo/ro/releases/2015-10-07/core.owl
+
+svn/import/IAO.owl: | import
+	curl -Lo $@ http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl
+
+import/%.howl: svn/import/%.owl
+	java -jar lib/howl.jar \
+	--context ontology/prefixes.howl \
+	--context ontology/labels.howl \
+	--context build/terms.howl \
+	--output howl \
+	$< > $@
+
+build/%.nt: import/%.howl | build
+	java -jar lib/howl.jar \
+	--context ontology/prefixes.howl \
+	--context ontology/labels.howl \
+	--context build/terms.howl \
+	--output ntriples \
+	$< > $@
+
+build/%.diff: svn/import/%.owl build/%.owl
+	robot diff \
+	--left svn/import/$*.owl \
+	--right build/$*.owl \
+	--output $@
+
+
+### Convert Templates
+
+OBSOLETE_HEADER := SUBJECT	definition:	definition source:	example of usage:	term editor:	alternative term:	IEDB alternative term:	has curation status:	subclass of:>	deprecated: %^^xsd:boolean	has obsolescence reason:>	term replaced by:>
+
+ontology/obsolete.tsv: svn/templates/obsolete.tsv
+	< $< \
+	tail -n+3 \
+	| cut -f2- \
+	| (echo "$(OBSOLETE_HEADER)"; cat -) \
+	> $@
+
+MIDLEVEL_ASSAYS_HEADER := SUBJECT	definition:	definition source:	example of usage:	term editor:	editor note:	alternative term:	CLASS_TYPE		:>> %	:>> has_specified_output some ('is about' some %)	:>> 'has part' some %	:>> 'has part' some %	:>> (has_specified_input some %) and (realizes some ('evaluant role' and ('inheres in' some %)))	:>> (has_specified_input some %) and (realizes some ('analyte role' and ('inheres in' some %)))	:>> (has_specified_input some %) and (realizes some (function and ('inheres in' some %)))	:>> has_specified_input some %	:>> (has_specified_input some %) and (realizes some ('reagent role' and ('inheres in' some %)))	:>> (has_specified_input some %) and (realizes some ('molecular label role' and ('inheres in' some %)))	:>> has_specified_output some %
+
+ontology/midlevel-assays.tsv: svn/templates/midlevel-assays.tsv
+	< $< \
+	tail -n+4 \
+	| cut -f2- \
+	| sed 's/	equivalent	/	equivalent to	/' \
+	| sed 's/	subclass	/	subclass of	/' \
+	| (echo "$(MIDLEVEL_ASSAYS_HEADER)"; cat -) \
+	> $@
+
+EPITOPE_ASSAYS_HEADER := SUBJECT	IEDB alternative term:	definition:	CLASS_TYPE	:>> %	:>> 'has part' some %	:>> has_specified_input some %	:>> (has_specified_input some %) and (realizes some ('reagent role' and ('inheres in' some %)))	:>> has_specified_input some (% and ('has part' some 'MH:>> protein complex'))	:>> has_specified_output some ('information content entity' and ('is about' some %))	:>> has_specified_output some ('information content entity' and ('is about' some (% and ('process is result of' some 'immunoglobulin binding to epitope'))))	:>> has_specified_output some ('information content entity' and ('is about' some (% and ('process is result of' some 'MHC:epitope complex binding to TCR'))))	:>> has_specified_output some %	:>> has_specified_output some ('has measurement unit label' value %)	term editor:	definition source:
+
+ontology/epitope-assays.tsv: svn/templates/epitope-assays.tsv
+	< $< \
+	tail -n+3 \
+	| cut -f2- \
+	| $(AWK) '{a=$$2; $$2=$$1; $$1=a; print $$0}' \
+	| sed 's/	equivalent	/	equivalent to	/' \
+	| sed 's/	subclass	/	subclass of	/' \
+	| (echo "$(EPITOPE_ASSAYS_HEADER)"; cat -) \
+	> $@
+
+
+### Convert OBI
+
+# Remove some unnecessary declarations (without any content)
+build/obi-clean.owl: svn/obi.owl
+	< $< \
+	sed '/<owl:Class .*\/>/d' \
+	| sed '/<owl:AnnotationProperty .*\/>/d' \
+	| sed '/<owl:ObjectProperty .*\/>/d' \
+	| sed '/<owl:NamedIndividual .*\/>/d' \
+	| sed '/<owl:Datatype .*\/>/d' \
+	> $@
+
+ontology/obi.howl: build/obi-clean.owl
+	java -jar lib/howl.jar \
+	--context ontology/prefixes.howl \
+	--context ontology/labels.howl \
+	--context build/terms.howl \
+	--output howl \
+	$< > $@
+
 ### Build HOWL
 
 build:
 	mkdir -p $@
 
-build/obi.howl: ontology/prefixes.howl ontology/labels.howl build/metadata.howl build/terms.howl
+build/obi.howl: ontology/prefixes.howl ontology/labels.howl build/metadata.howl build/terms.howl import/BFO_classes_only.howl import/RO_core.howl import/IAO.howl import/ChEBI_imports.howl import/GO_imports.howl import/NCBITaxon_imports.howl import/OBO_imports.howl import/PATO_imports.howl import/SO_imports.howl import/UO_imports.howl import/UO_instance_imports.howl build/midlevel-assays.howl build/epitope-assays.howl build/obsolete.howl
 	cat $^ > $@
 
 build/metadata.howl: ontology/metadata.howl | build
@@ -173,7 +274,7 @@ build/metadata.howl: ontology/metadata.howl | build
 	sed 's!^owl:versionIRI:> .*!owl:versionIRI:> <$(OBI_VERSION_IRI)>!' \
 	> $@
 
-build/terms.howl: src/template.py ontology/terms.tsv | build
+build/%.howl: src/template.py ontology/%.tsv | build
 	$^ > $@
 
 
@@ -189,23 +290,27 @@ build/%.ttl: build/%.nt
 	-f 'xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"' \
 	-f 'xmlns:xsd="http://www.w4.org/2001/XMLSchema#"' \
 	-f 'xmlns:owl="http://www.w3.org/2002/07/owl#"' \
+	-f 'xmlns:obo="http://purl.obolibrary.org/obo/"' \
 	$< > $@
 
 build/%.owl: build/%.ttl
 	robot convert --input $< --output $@
 
+obi.owl: build/obi.owl
+	cp $< $@
+
 
 ### Common Tasks
 
 .PHONY: all
-all: build/obi.owl
+all: obi.owl
 
 .PHONY: tidy
 tidy:
-	rm -rf build ontology/terms.tsv ontology/metadata.howl
+	rm -rf build ontology/terms.tsv ontology/metadata.howl ontology/obsolete.tsv
 
 .PHONY: clean
-clean:
-	rm -rf old build
+clean: tidy
+	rm -rf svn build
 
 

@@ -1,0 +1,424 @@
+material entity
+type:> owl:Class
+
+water
+label: water
+type:> owl:Class
+editor preferred term~editor preferred label: water
+textual definition: An inorganic hydroxy compound that has formula H2O.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+biotin
+label: biotin
+type:> owl:Class
+editor preferred term~editor preferred label: biotin
+textual definition: An organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+peptide
+label: peptide
+type:> owl:Class
+editor preferred term~editor preferred label: peptide
+textual definition: Amide derived from two or more amino carboxylic acid molecules (the same or different) by formation of a covalent bond from the carbonyl carbon of one to the nitrogen atom of another with formal loss of water. The term is usually applied to structures formed from alpha-amino acids, but it includes those derived from any amino carboxylic acid. X = OH, OR, NH2, NHR, etc.
+imported from:> obo:chebi.owl
+subclass of:> macromolecule
+
+deoxyribonucleic acid
+label: deoxyribonucleic acid
+type:> owl:Class
+editor preferred term~editor preferred label: deoxyribonucleic acid
+textual definition: High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms.
+imported from:> obo:chebi.owl
+subclass of:> nucleic acid
+
+hydrogensulfite
+label: hydrogensulfite
+type:> owl:Class
+editor preferred term~editor preferred label: hydrogensulfite
+textual definition: A sulfur oxoanion that has formula HO3S.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+glucose
+label: glucose
+type:> owl:Class
+editor preferred term~editor preferred label: glucose
+textual definition: An aldohexose used as a source of energy and metabolic intermediate.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+5'-adenylyl sulfate
+label: 5'-adenylyl sulfate
+type:> owl:Class
+editor preferred term~editor preferred label: 5'-adenylyl sulfate
+textual definition: An adenosine 5'-phosphate having a sulfo group attached to one the phosphate OH groups.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+molecular entity
+label: molecular entity
+type:> owl:Class
+editor preferred term~editor preferred label: molecular entity
+textual definition: Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.
+imported from:> obo:chebi.owl
+subclass of:> material entity
+
+cytochalasin
+label: cytochalasin
+type:> owl:Class
+editor preferred term~editor preferred label: cytochalasin
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+N-ethyl-N-nitrosourea
+label: N-ethyl-N-nitrosourea
+type:> owl:Class
+editor preferred term~editor preferred label: N-ethyl-N-nitrosourea
+textual definition: A member of the class of N-nitrosoureas that is urea in which one of the nitrogens is substituted by ethyl and nitroso groups.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+proton
+label: proton
+type:> owl:Class
+editor preferred term~editor preferred label: proton
+textual definition: Nuclear particle of charge number +1, spin 1/2 and rest mass of 1.007276470(12) u.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+luciferin
+label: luciferin
+type:> owl:Class
+editor preferred term~editor preferred label: luciferin
+textual definition: A low-molecular-mass compound present in bioluminescent organisms that emits light when oxidized in presence of enzyme luciferase.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+sodium chloride
+label: sodium chloride
+type:> owl:Class
+editor preferred term~editor preferred label: sodium chloride
+textual definition: An inorganic chloride salt having sodium(1+) as the counterion.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+lead(0)
+label: lead(0)
+type:> owl:Class
+editor preferred term~editor preferred label: lead(0)
+textual definition: An elemental lead that has formula Pb.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+acrylamide
+label: acrylamide
+type:> owl:Class
+editor preferred term~editor preferred label: acrylamide
+textual definition: A member of the class of acrylamides that results from the formal condensation of acrylic acid with ammonia.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+hydroxyl
+label: hydroxyl
+type:> owl:Class
+editor preferred term~editor preferred label: hydroxyl
+textual definition: An oxygen radical that has formula HO.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+deuterium atom
+label: deuterium atom
+type:> owl:Class
+editor preferred term~editor preferred label: deuterium atom
+textual definition: The stable isotope of hydrogen with relative atomic mass 2.014102 and a natural abundance of 0.0115 atom percent (from Greek deltaepsilonupsilontauepsilonrhoomicronnu, second).
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+subclass of:> atom
+
+ruthenium atom
+label: ruthenium atom
+type:> owl:Class
+editor preferred term~editor preferred label: ruthenium atom
+textual definition: An iron group element atom that has formula Ru.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+fluorescein
+label: fluorescein
+type:> owl:Class
+editor preferred term~editor preferred label: fluorescein
+textual definition: A xanthene dye that is a highly fluorescent dye, detectable even when present in minute quantities. Used forensically to detect traces of blood, in analytical chemistry as an indicator in silver nitrate titrations and in microscopy.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+gadodiamide hydrate
+label: gadodiamide hydrate
+type:> owl:Class
+editor preferred term~editor preferred label: gadodiamide hydrate
+textual definition: The hydrate of gadodiamide.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+gadoteridol
+label: gadoteridol
+type:> owl:Class
+editor preferred term~editor preferred label: gadoteridol
+textual definition: A non-ionic gadolinium chelate having a macrocyclic tetraamine framework. It is used as a paramagnetic contrast agent in magnetic resonance imaging (MRI).
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+phenol red
+label: phenol red
+type:> owl:Class
+editor preferred term~editor preferred label: phenol red
+textual definition: 3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 4-hydroxyphenyl groups. A pH indicator changing colour from yellow below pH 6.8 to bright pink above pH 8.2, it is commonly used as an indicator in cell cultures and in home swimming pool test kits. It is also used in the (now infrequently performed) phenolsulfonphthalein (PSP) test for estimation of overall blood flow through the kidney.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+sodium citrate dihydrate
+label: sodium citrate dihydrate
+type:> owl:Class
+editor preferred term~editor preferred label: sodium citrate dihydrate
+textual definition: The dihydrate of trisodium citrate.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+atom
+label: atom
+type:> owl:Class
+editor preferred term~editor preferred label: atom
+textual definition: A chemical entity constituting the smallest component of an element having the chemical properties of the element.
+imported from:> obo:chebi.owl
+subclass of:> material entity
+
+rhodium atom
+label: rhodium atom
+type:> owl:Class
+editor preferred term~editor preferred label: rhodium atom
+textual definition: A cobalt group element atom that has formula Rh.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+gadolinium atom
+label: gadolinium atom
+type:> owl:Class
+editor preferred term~editor preferred label: gadolinium atom
+textual definition: A lanthanoid atom that has formula Gd.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+terbium atom
+label: terbium atom
+type:> owl:Class
+editor preferred term~editor preferred label: terbium atom
+textual definition: A lanthanoid atom that has formula Tb.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+nucleic acid
+label: nucleic acid
+type:> owl:Class
+editor preferred term~editor preferred label: nucleic acid
+textual definition: A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid.
+imported from:> obo:chebi.owl
+subclass of:> macromolecule
+
+ribonucleic acid
+label: ribonucleic acid
+type:> owl:Class
+editor preferred term~editor preferred label: ribonucleic acid
+textual definition: High molecular weight, linear polymers, composed of nucleotides containing ribose and linked by phosphodiester bonds; RNA is central to the synthesis of proteins.
+imported from:> obo:chebi.owl
+subclass of:> nucleic acid
+
+amino acid
+label: amino acid
+type:> owl:Class
+editor preferred term~editor preferred label: amino acid
+textual definition: A carboxylic acid containing one or more amino groups.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+macromolecule
+label: macromolecule
+type:> owl:Class
+editor preferred term~editor preferred label: macromolecule
+textual definition: A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+gadolinium molecular entity
+label: gadolinium molecular entity
+type:> owl:Class
+editor preferred term~editor preferred label: gadolinium molecular entity
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+gadodiamide
+label: gadodiamide
+type:> owl:Class
+editor preferred term~editor preferred label: gadodiamide
+textual definition: A non-ionic gadolinium chelate having a macrocyclic triamine framework. It is used as a paramagnetic contrast agent in magnetic resonance imaging (MRI).
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+sodium phosphate
+label: sodium phosphate
+type:> owl:Class
+editor preferred term~editor preferred label: sodium phosphate
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+phosphorus-32 atom
+label: phosphorus-32 atom
+type:> owl:Class
+editor preferred term~editor preferred label: phosphorus-32 atom
+textual definition: The radioactive isotope of phosphorus with relative atomic mass 31.973907 and half-life of 14.26 days.
+imported from:> obo:chebi.owl
+subclass of:> atom
+
+phosphorus-33 atom
+label: phosphorus-33 atom
+type:> owl:Class
+editor preferred term~editor preferred label: phosphorus-33 atom
+textual definition: The radioactive isotope of phosphorus with relative atomic mass 32.971725, half-life of 25.34 days and nuclear spin (1)/2.
+imported from:> obo:chebi.owl
+subclass of:> atom
+
+Cy3 dye
+label: Cy3 dye
+type:> owl:Class
+editor preferred term~editor preferred label: Cy3 dye
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+Cy5 dye
+label: Cy5 dye
+type:> owl:Class
+editor preferred term~editor preferred label: Cy5 dye
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+digoxigenin
+label: digoxigenin
+type:> owl:Class
+editor preferred term~editor preferred label: digoxigenin
+textual definition: A hydroxy steroid that consists of 5beta-cardanolide having a double bond at the 20(22)-position as well as hydroxy groups at the 3beta-, 12beta- and 14beta-positions. It has been isolated from the plant species of the genus Digitalis.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+ethylenediaminetetraacetic acid
+label: ethylenediaminetetraacetic acid
+type:> owl:Class
+editor preferred term~editor preferred label: ethylenediaminetetraacetic acid
+textual definition: A polyamino carboxylic acid that has formula C10H16N2O8.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+double-stranded DNA
+label: double-stranded DNA
+type:> owl:Class
+editor preferred term~editor preferred label: double-stranded DNA
+imported from:> obo:chebi.owl
+subclass of:> deoxyribonucleic acid
+
+5-bromo-2'-deoxyuridine
+label: 5-bromo-2'-deoxyuridine
+type:> owl:Class
+editor preferred term~editor preferred label: 5-bromo-2'-deoxyuridine
+textual definition: A pyrimidine 2'-deoxyribonucleoside compound having 5-bromouracil as the nucleobase.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+chromium-51
+label: chromium-51
+type:> owl:Class
+editor preferred term~editor preferred label: chromium-51
+textual definition: A synthetic radioactive isotope of chromium having a half-life of 27.7 days and decaying by electron capture with emission of gamma rays (0.32 MeV); it is used to label red blood cells for measurement of mass or volume, survival time, and sequestration studies, for the diagnosis of gastrointestinal bleeding, and to label platelets to study their survival.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+Alexa Fluor 532
+label: Alexa Fluor 532
+type:> owl:Class
+editor preferred term~editor preferred label: Alexa Fluor 532
+textual definition: An organosulfonic acid that has formula C34H33N3O11S2.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+Alexa Fluor 546
+label: Alexa Fluor 546
+type:> owl:Class
+editor preferred term~editor preferred label: Alexa Fluor 546
+textual definition: An organic heteropentacyclic compound that has formula C44H46Cl3N4NaO14S3.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+Alexa Fluor 555
+label: Alexa Fluor 555
+type:> owl:Class
+editor preferred term~editor preferred label: Alexa Fluor 555
+textual definition: A fluorescent dye of absorption wavelength 555 nm and emission wavelength 565 nm, derived from a 3,6-diaminoxanthene-4,5-disulfate.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+tritiated thymidine
+label: tritiated thymidine
+type:> owl:Class
+editor preferred term~editor preferred label: tritiated thymidine
+textual definition: Thymidine linked to the radioisotope tritium. Used to label DNA in the study of cellular and viral DNA synthesis.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+dimethyl sulfate
+label: dimethyl sulfate
+type:> owl:Class
+editor preferred term~editor preferred label: dimethyl sulfate
+textual definition: The dimethyl ester of sulfuric acid.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+diethyl pyrocarbonate
+label: diethyl pyrocarbonate
+type:> owl:Class
+editor preferred term~editor preferred label: diethyl pyrocarbonate
+textual definition: The diethyl ester of dicarbonic acid.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+1,1-dihydroxy-3-ethoxy-2-butanone
+label: 1,1-dihydroxy-3-ethoxy-2-butanone
+type:> owl:Class
+editor preferred term~editor preferred label: 1,1-dihydroxy-3-ethoxy-2-butanone
+textual definition: A butanone derivative having two hydroxy substituents at the 1-position and an ethoxy substituent at the 3-position.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+N-cyclohexyl-N'-(2-(4-morpholinyl)ethyl)carbodiimide
+label: N-cyclohexyl-N'-(2-(4-morpholinyl)ethyl)carbodiimide
+type:> owl:Class
+editor preferred term~editor preferred label: N-cyclohexyl-N'-(2-(4-morpholinyl)ethyl)carbodiimide
+textual definition: A carbodiimide having cyclcohexyl and 2-(4-morpholinyl)ethyl as the two N-substituents.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+N-methylisatoic anhydride
+label: N-methylisatoic anhydride
+type:> owl:Class
+editor preferred term~editor preferred label: N-methylisatoic anhydride
+textual definition: A 3,1-benzoxazin-1,4-dione having an N-methyl substituent.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+(S)-1-(4-bromoacetamidobenzyl)EDTA
+label: (S)-1-(4-bromoacetamidobenzyl)EDTA
+type:> owl:Class
+editor preferred term~editor preferred label: (S)-1-(4-bromoacetamidobenzyl)EDTA
+textual definition: A tetracarboxylic acid consisting of ethylenediaminetetraacetic acid having a 4-bromoacetamidobenzyl group at the C1-position and (S)-configuration.
+imported from:> obo:chebi.owl
+subclass of:> molecular entity
+
+EDTA methidiumpropylamide
+label: EDTA 

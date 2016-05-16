@@ -1,5 +1,7 @@
 LABEL rdf:type: type
 LABEL rdfs:label: label
+LABEL rdfs:comment: comment
 LABEL rdfs:subClassOf: subclass of
 LABEL owl:equivalentClass: equivalent to
+LABEL owl:deprecated: deprecated
 
